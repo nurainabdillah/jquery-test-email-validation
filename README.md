@@ -1,2 +1,2 @@
 # jquery-test-email-validation
-A simple jQuery code for email address validation 
+A simple jQuery code example for email address validation 
