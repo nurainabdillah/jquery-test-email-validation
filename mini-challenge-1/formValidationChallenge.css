@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Mukta', sans-serif;
+    color: #aaa;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+fieldset {
+    width: 650px;
+    margin: 20px auto;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    
+}
+legend {
+    font-size: 1.5em;
+}
+fieldset .form-div {
+    display: flex;
+    align-items: center;
+    margin: 2em;
+}
+label {
+    order: 1;
+    width: 15em;
+    text-align: left;
+    white-space: nowrap;
+}
+.asterisk {
+    color: #ff0000;
+}
+input {
+    order: 2;
+    height: 3em;
+    width: 350px;
+    font-size: 15px;
+    padding: 1em;
+    border: 1px solid #aaa;
+    border-radius: 1em;
+    outline: none;
+}
+::placeholder {
+    font-family: 'Mukta', sans-serif;
+    font-size: 15px;
+    color: #ddd;
+}
+button {
+    height: 30px;
+    width: 75px;
+    border: 1px groove #aaa;
+    border-radius: 10px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #2a2a2a;
+}
+button:hover {
+    background: linear-gradient(180deg, #fac2a1, #215732)
+}
+#submit-button {
+    justify-content: center;
+    margin: 25px;
+}
+#errorMessage, #fieldMissing {
+    color: #ff0000;
+    font-size: .85em;
+}
+#successMessage {
+    color: #52c0a9;
+    font-size: .85em;
+}
+#errorMessage, #successMessage, #fieldMissing {
+    text-align: left;
+    padding-left: 2em;
+}

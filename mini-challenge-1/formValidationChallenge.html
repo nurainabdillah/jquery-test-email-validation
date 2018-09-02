@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+        <title>jQuery Form</title>
+        <link href="formValidationChallenge.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        
+        <form id="form">
+            <fieldset>
+                <legend>Sign Up Form</legend>
+                <div id="fieldMissing"></div>
+                <div id="errorMessage"></div>
+                <div id="successMessage"></div>
+                <div class="form-div">
+                    <label for="email"><span class="asterisk">* </span>Email</label>
+                    <input type="email" name="email" id="email" placeholder="someone@example.com">
+                </div>
+                <div class="form-div">
+                    <label for="phone"><span class="asterisk">* </span>Telephone</label>    
+                    <input type="tel" name="phone" id="phone" placeholder="eg. 01230000000">
+                </div>
+                <div class="form-div">
+                    <label for="password"><span class="asterisk">* </span>Password</label>
+                    <input type="password" name="password" id="password" placeholder="**********">
+                </div>
+                <div class="form-div">
+                    <label for="confirm-password"><span class="asterisk">* </span>Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="**********">
+                </div>
+                <div id="submit-button">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </fieldset>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="formValidationChallenge.js"></script>
+    </body>
+</html>
